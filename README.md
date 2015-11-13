@@ -6,7 +6,7 @@ Basic style as follows,
 ![](image/basic.png "basic style")
 
 ## Dependency
-JQuery
+[jQuery](https://jquery.com/)
 
 ## Date
 2015-11-13
