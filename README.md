@@ -2,8 +2,11 @@
 range.js beautiful slide bar for &lt;input type=range />
 
 ## Basic
-Basic style as follows,
+Basic style as follows:
 ![](image/basic.png "basic style")
+
+## Usage
+More detail usage visit .
 
 ## Dependency
 [jQuery](https://jquery.com/)
