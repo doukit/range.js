@@ -15,16 +15,12 @@
     <link rel="stylesheet" type="text/css" href="./assets/range.css">
 
     <style type="text/css">
-
         .masthead.segment {
             min-height: 700px;
             padding: 1em 0em;
         }
         .masthead .logo.item img {
             margin-right: 1em;
-        }
-        .masthead .ui.menu .ui.button {
-            margin-left: 0.5em;
         }
         .masthead h1.ui.header {
             margin-top: 3em;
@@ -57,9 +53,6 @@
         }
 
         @media only screen and (max-width: 700px) {
-            .ui.fixed.menu {
-                display: none !important;
-            }
             .secondary.pointing.menu .item,
             .secondary.pointing.menu .menu {
                 display: none;
@@ -84,8 +77,7 @@
     <script>
         $(document).ready(function() {
             // fix menu when passed
-            $('.masthead')
-                    .visibility({
+            $('.masthead').visibility({
                         once: false,
                         onBottomPassed: function() {
                             $('.fixed.menu').transition('fade in');
@@ -126,7 +118,7 @@
             </h1>
             <h2>Beautiful slide bar for range input element.</h2>
             <a href="#usage">
-            <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+                <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
             </a>
         </div>
     </div>
@@ -141,7 +133,7 @@
 
                 <div>
                     <label>0%</label>
-                    <input type="range" value="0" min="0" max="100"  id="rangedemo"/>
+                    <input type="range" value="32" min="0" max="100"  id="rangedemo"/>
                     <label>100%</label>
                     <div class="ui label">
                         Current
