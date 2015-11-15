@@ -11,7 +11,13 @@ function eachInputRangeAction() {
 
     if (percent == 100) {
         $(this).css('background', '-webkit-linear-gradient(left, #65999c 100%, red ' + percent + '%, #ddd ' + percent + '%)');
+
+        // for Mozilla firefox
+        $(this).css('background', '-moz-linear-gradient(left, #65999c 100%, red ' + percent + '%, #ddd ' + percent + '%)');
     } else {
         $(this).css('background', '-webkit-linear-gradient(left, #65999c 0%, red ' + percent + '%, #ddd ' + percent + '%)');
+
+        // for Mozilla firefox
+        $(this).css('background', '-moz-linear-gradient(left, #65999c 0%, red ' + percent + '%, #ddd ' + percent + '%)');
     }
 }

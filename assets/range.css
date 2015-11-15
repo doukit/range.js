@@ -7,8 +7,10 @@ input[type=range] {
 
     /*required for proper track sizing in FF 默认300px*/
     width: 300px;
+    height: 9px;
 
     background: -webkit-linear-gradient(left, #ddd 0%, #ddd 50%, #ddd 50%);
+    background: -moz-linear-gradient(left, #ddd 0%, #ddd 50%, #ddd 50%);
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -26,7 +28,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 16px;
     border-radius: 50%;
     background: goldenrod;
-    margin-top: -4px;
+    margin-top: -5px;
 }
 
 input[type=range]:focus {
@@ -40,25 +42,30 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 input[type=range]::-moz-range-track {
     width: 300px;
-    height: 5px;
-    background: #ddd;
+    height: 0px;
+    /*background: #ddd;*/
+    /*background: -moz-linear-gradient(left, #ddd 0%, #ddd 50%, #ddd 50%);*/
     border: none;
     border-radius: 3px;
 }
 
 input[type=range]::-moz-range-thumb {
+    -moz-appearance: none;
     border: none;
     height: 16px;
     width: 16px;
     border-radius: 50%;
     background: goldenrod;
+    margin-top: -4px;
 }
 
 /*hide the outline behind the border*/
+/*
 input[type=range]:-moz-focusring{
     outline: 1px solid white;
     outline-offset: -1px;
 }
+*/
 
 input[type=range]::-ms-track {
     width: 300px;
