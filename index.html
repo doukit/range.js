@@ -78,14 +78,14 @@
         $(document).ready(function() {
             // fix menu when passed
             $('.masthead').visibility({
-                        once: false,
-                        onBottomPassed: function() {
-                            $('.fixed.menu').transition('fade in');
-                        },
-                        onBottomPassedReverse: function() {
-                            $('.fixed.menu').transition('fade out');
-                        }
-                    })
+                once: false,
+                onBottomPassed: function() {
+                    $('.fixed.menu').transition('fade in');
+                },
+                onBottomPassedReverse: function() {
+                    $('.fixed.menu').transition('fade out');
+                }
+            })
             ;
         })
         ;
@@ -127,9 +127,9 @@
         <div class="ui vertical stripe segment">
             <div class="ui text container">
                 <h3 class="ui header">range.js</h3>
-                <p>Beautiful slide bar for input</p>
+                <p>A beautiful slide bar plugin for range input element.</p>
 
-                <h3 class="ui header">Basic Style</h3>
+                <h3 class="ui header">Basic Style (default)</h3>
 
                 <div>
                     <label>0%</label>
@@ -140,8 +140,15 @@
                         <div class="detail">0%</div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
-
+    <div id="browsersupport">
+        <div class="ui vertical stripe segment">
+            <div class="ui text container">
+                <h3 class="ui header">Browser Support</h3>
+                Chrome(46.0.x.x+), Safari(9.0.1+), Firefox(42.0+)
             </div>
         </div>
     </div>
@@ -149,8 +156,7 @@
     <div class="ui inverted vertical footer segment" style="width: 100%">
         <div class="ui center aligned container">
             <div class="seven wide column">
-                <p><a href="https://github.com/doukit/range.js">range.js</a>
-                    <i class="github icon"></i><a href="https://github.com/login?return_to=%2Fdoukit%2Frange.js">fork</a></p>
+                <p><a href="https://github.com/doukit/range.js">range.js</a> is freely distributable under the terms of the MIT license.</p>
             </div>
         </div>
     </div>

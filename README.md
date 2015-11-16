@@ -1,5 +1,5 @@
 # range.js
-range.js beautiful slide bar for &lt;input type=range />
+range.js beautiful slide bar for &lt;input type=range /&gt; . Now, chrome, safari, firefox browser are supported.
 
 ## Basic
 Basic style as follows:
@@ -11,5 +11,14 @@ More detail usage visit [http://rangejs.doukit.org/](http://rangejs.doukit.org/)
 ## Dependency
 [jQuery](https://jquery.com/)
 
-## Date
+## Browser Support
+Chrome, Safari, Firefox
+
+## License 
+range.js is freely distributable under the terms of the [MIT license](./LICENSE).
+
+## Create Date
 2015-11-13
+
+## Update
+2015-11-16
