@@ -14,6 +14,9 @@
     <script src="semantic/semantic.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/range.css">
 
+    <link rel="stylesheet" href="style/highlight/github.css">
+    <script src="style/highlight/highlight.min.js"></script>
+
     <style type="text/css">
         .masthead.segment {
             min-height: 700px;
@@ -141,6 +144,22 @@
                     </div>
                 </div>
             </div>
+
+            <div class="ui container">
+                <pre>
+                    <code class="html">
+                        &lt;div&gt;
+                            &lt;label&gt;0%&lt;/label&gt;
+                            &lt;input type="range" value="32" min="0" max="100"  id="rangedemo"/&gt;
+                            &lt;label>100%&lt;/label&gt;
+                            &lt;div class="ui label"&gt;
+                            Current
+                            &lt;div class="detail"&gt;0%&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
         </div>
     </div>
 
@@ -164,6 +183,10 @@
 
 <script src="./assets/range.js"></script>
 <script type="text/javascript">
+    $(function(){
+        hljs.initHighlightingOnLoad();
+    })
+
     $('.ui.sidebar').sidebar('toggle');
 </script>
 </body>
