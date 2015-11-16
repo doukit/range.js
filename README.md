@@ -11,5 +11,8 @@ More detail usage visit [http://rangejs.doukit.org/](http://rangejs.doukit.org/)
 ## Dependency
 [jQuery](https://jquery.com/)
 
+## License 
+range.js is freely distributable under the terms of the [MIT license](./LICENSE).
+
 ## Date
 2015-11-13
