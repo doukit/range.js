@@ -17,5 +17,8 @@ Chrome, Safari, Firefox
 ## License 
 range.js is freely distributable under the terms of the [MIT license](./LICENSE).
 
-## Date
+## Create Date
 2015-11-13
+
+## Update
+2015-11-16
