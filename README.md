@@ -5,7 +5,7 @@ range.js beautiful slide bar for &lt;input type=range /&gt; . Now, chrome, safar
 Basic style as follows:
 ![](image/basic.png "basic style")
 
-```
+```html
  <div>
      <label>0%</label>
      <input type="range" value="32" min="0" max="100"  id="rangedemo"/>
