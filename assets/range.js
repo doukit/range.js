@@ -31,6 +31,10 @@ navigator.browserInfo= (function(){
     //return M.join(' ');
 })();
 
+var config = {
+    style : 'default',    // style 'default', 'basic'
+    color : 'red'          // '#65999c'
+}
 
 
 function eachInputRangeAction() {
@@ -38,17 +42,17 @@ function eachInputRangeAction() {
 
     $(this).parent().find('.detail').html(this.value + '%')
 
+    // gradient depend on different browser.
+    var gradient = 'Firefox' == navigator.browserInfo.browser ? '-moz-linear-gradient' : '-webkit-linear-gradient';
+
     if (percent == 100) {
-        if ('Firefox' == navigator.browserInfo.browser) {
-            $(this).css('background', '-moz-linear-gradient(left, #65999c 100%, red ' + percent + '%, #ddd ' + percent + '%)');
-        } else {
-            $(this).css('background', '-webkit-linear-gradient(left, #65999c 100%, red ' + percent + '%, #ddd ' + percent + '%)');
-        }
+        $(this).css('background', gradient + '(left, #65999c 100%, red ' + percent + '%, #ddd ' + percent + '%)');
     } else {
-        if ('Firefox' == navigator.browserInfo.browser) {
-            $(this).css('background', '-moz-linear-gradient(left, #65999c 0%, red ' + percent + '%, #ddd ' + percent + '%)');
+        //$(this).css('background', '-webkit-linear-gradient(left, #65999c 0%, red ' + percent + '%, #ddd ' + percent + '%)');
+        if (config.style == 'basic') {
+            $(this).css('background', gradient + '(left, ' + config.color + ' 0%, '+ config.color +' ' + percent + '%, #ddd ' + percent + '%)');
         } else {
-            $(this).css('background', '-webkit-linear-gradient(left, #65999c 0%, red ' + percent + '%, #ddd ' + percent + '%)');
+            $(this).css('background', gradient + '(left, #65999c 0%, '+ config.color +' ' + percent + '%, #ddd ' + percent + '%)');
         }
     }
 }
