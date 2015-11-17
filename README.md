@@ -5,6 +5,18 @@ range.js beautiful slide bar for &lt;input type=range /&gt; . Now, chrome, safar
 Basic style as follows:
 ![](image/basic.png "basic style")
 
+```html
+ <div>
+     <label>0%</label>
+     <input type="range" value="32" min="0" max="100"  id="rangedemo"/>
+     <label>100%</label>
+     <div class="ui label">
+     Current
+     <div class="detail">0%</div>
+     </div>
+ </div>
+```
+
 ## Usage
 More detail usage visit [http://rangejs.doukit.org/](http://rangejs.doukit.org/).
 
@@ -12,7 +24,7 @@ More detail usage visit [http://rangejs.doukit.org/](http://rangejs.doukit.org/)
 [jQuery](https://jquery.com/)
 
 ## Browser Support
-Chrome, Safari, Firefox
+Chrome, Safari, Firefox, Opera
 
 ## License 
 range.js is freely distributable under the terms of the [MIT license](./LICENSE).
@@ -21,4 +33,4 @@ range.js is freely distributable under the terms of the [MIT license](./LICENSE)
 2015-11-13
 
 ## Update
-2015-11-16
+2015-11-17
