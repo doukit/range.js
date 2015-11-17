@@ -24,7 +24,7 @@ More detail usage visit [http://rangejs.doukit.org/](http://rangejs.doukit.org/)
 [jQuery](https://jquery.com/)
 
 ## Browser Support
-Chrome, Safari, Firefox
+Chrome, Safari, Firefox, Opera
 
 ## License 
 range.js is freely distributable under the terms of the [MIT license](./LICENSE).
@@ -33,4 +33,4 @@ range.js is freely distributable under the terms of the [MIT license](./LICENSE)
 2015-11-13
 
 ## Update
-2015-11-16
+2015-11-17
