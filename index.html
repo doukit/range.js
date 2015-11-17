@@ -8,10 +8,10 @@
     <link rel='shortcut icon' type='image/x-icon' href='assets/image/favicon.ico' />
 
 
-    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="style/semantic/semantic.min.css">
 
     <script src="deps/jquery.min.js"></script>
-    <script src="semantic/semantic.min.js"></script>
+    <script src="style/semantic/semantic.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/range.css">
 
     <link rel="stylesheet" href="style/highlight/github.css">
@@ -109,7 +109,7 @@
                 <a class="item" href="#usage">Usage</a>
 
                 <a href="https://github.com/login?return_to=%2Fdoukit%2Frange.js">
-                    <img style="position: absolute; top: 0; right: 0; border: 0;" src="image/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+                    <img style="position: absolute; top: 0; right: 0; border: 0;" src="style/image/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
                 </a>
 
             </div>
@@ -132,31 +132,45 @@
                 <h3 class="ui header">range.js</h3>
                 <p>A beautiful slide bar plugin for range input element.</p>
 
-                <h3 class="ui header">Basic Style (default)</h3>
+                <h3 class="ui header">Basic Style</h3>
 
                 <div>
                     <label>0%</label>
-                    <input type="range" value="32" min="0" max="100"  id="rangedemo"/>
+                    <input type="range" value="32" min="0" max="100"  id="basic"/>
                     <label>100%</label>
                     <div class="ui label">
                         Current
                         <div class="detail">0%</div>
                     </div>
                 </div>
-            </div>
 
-            <div class="ui container">
                 <pre>
-                    <code class="html">
-                        &lt;div&gt;
-                            &lt;label&gt;0%&lt;/label&gt;
-                            &lt;input type="range" value="32" min="0" max="100"  id="rangedemo"/&gt;
-                            &lt;label>100%&lt;/label&gt;
-                            &lt;div class="ui label"&gt;
-                            Current
-                            &lt;div class="detail"&gt;0%&lt;/div&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
+                    <code class="javascript">
+                        $('#basic').range({
+                            color : 'green',
+                            style : 'basic'
+                        });
+                    </code>
+                </pre>
+
+                <h3 class="ui header">Gradient Style</h3>
+
+                <div>
+                    <label>0%</label>
+                    <input type="range" value="32" min="0" max="100"  id="gradient"/>
+                    <label>100%</label>
+                    <div class="ui label">
+                        Current
+                        <div class="detail">0%</div>
+                    </div>
+                </div>
+
+                <pre>
+                    <code class="javascript">
+                        $('#gradient').range({
+                            color : 'red',
+                            style : 'gra'
+                        });
                     </code>
                 </pre>
             </div>
@@ -167,7 +181,7 @@
         <div class="ui vertical stripe segment">
             <div class="ui text container">
                 <h3 class="ui header">Browser Support</h3>
-                Chrome(46.0.x.x+), Safari(9.0.1+), Firefox(42.0+), Opera(33.0
+                Chrome(46.0.x.x+), Safari(9.0.1+), Firefox(42.0+), Opera(33.0)
             </div>
         </div>
     </div>
@@ -186,6 +200,24 @@
     $(function(){
         hljs.initHighlightingOnLoad();
     })
+
+    /**
+    $('input[type="range"]').range({
+        color : 'red',
+        style : 'basic'
+    });
+    */
+
+    $('#basic').range({
+        color : 'green',
+        style : 'basic'
+    });
+
+    /*
+    $('#gradient').range({
+        color : 'red',
+        style : 'gragradient'
+    });*/
 
     $('.ui.sidebar').sidebar('toggle');
 </script>
