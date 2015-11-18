@@ -133,7 +133,6 @@
                 <p>A beautiful slide bar plugin for range input element.</p>
 
                 <h3 class="ui header">Basic Style</h3>
-
                 <div>
                     <label>0%</label>
                     <input type="range" value="32" min="0" max="100"  id="basic"/>
@@ -143,7 +142,6 @@
                         <div class="detail">0%</div>
                     </div>
                 </div>
-
                 <pre>
                     <code class="javascript">
                         $('#basic').range({
@@ -154,7 +152,6 @@
                 </pre>
 
                 <h3 class="ui header">Gradient Style</h3>
-
                 <div>
                     <label>0%</label>
                     <input type="range" value="32" min="0" max="100"  id="gradient"/>
@@ -164,7 +161,6 @@
                         <div class="detail">0%</div>
                     </div>
                 </div>
-
                 <pre>
                     <code class="javascript">
                         $('#gradient').range({
@@ -173,6 +169,35 @@
                         });
                     </code>
                 </pre>
+
+                <h3 class="ui header">Basic Style (Group)</h3>
+                <div>
+                    <label>0%</label>
+                    <input class="basic-group" type="range" value="32" min="0" max="100"/>
+                    <label>100%</label>
+                    <div class="ui label">
+                        Current
+                        <div class="detail">0%</div>
+                    </div>
+                </div>
+                <div>
+                    <label>0%</label>
+                    <input class="basic-group" type="range" value="32" min="0" max="100"/>
+                    <label>100%</label>
+                    <div class="ui label">
+                        Current
+                        <div class="detail">0%</div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="javascript">
+                        $('.basic-group').range({
+                            color : 'blue',
+                            style : 'basic'
+                        })
+                    </code>
+                </pre>
+
             </div>
         </div>
     </div>
@@ -213,11 +238,15 @@
         style : 'basic'
     });
 
-    /*
     $('#gradient').range({
         color : 'red',
         style : 'gradient'
-    });*/
+    });
+
+    $('.basic-group').range({
+        color : 'blue',
+        style : 'basic'
+    })
 
     $('.ui.sidebar').sidebar('toggle');
 </script>
