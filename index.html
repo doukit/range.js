@@ -74,6 +74,10 @@
                 font-size: 1.5em;
             }
         }
+
+        .code {
+            margin-top: 2px;
+        }
     </style>
 
     <script>
@@ -118,7 +122,7 @@
             <h1 class="ui inverted header">
                 range.js
             </h1>
-            <h2>Beautiful slide bar for range input element.</h2>
+            <h2>A beautiful slide bar plugin for range input element.</h2>
             <a href="#usage">
                 <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
             </a>
@@ -131,6 +135,14 @@
                 <h3 class="ui header">range.js</h3>
                 <p>A beautiful slide bar plugin for range input element.</p>
 
+                <div class="ui segment">
+                    <div class="ui top left attached label">Code</div>
+                    <div class="code">
+                        &lt;link rel="stylesheet" type="text/css" href="http://rangejs.doukit.org/assets/range.min.css"&gt;
+                        &lt;script src="http://rangejs.doukit.org/assets/range.min.js"&gt;&lt;/script&gt;
+                    </div>
+                </div>
+
                 <h3 class="ui header">Basic Style</h3>
                 <div>
                     <label>0%</label>
@@ -141,14 +153,15 @@
                         <div class="detail">0%</div>
                     </div>
                 </div>
-                <pre>
-                    <code class="javascript">
+                <div class="ui segment">
+                    <div class="ui top left attached label">Code</div>
+                    <div class="code">
                         $('#basic').range({
-                            color : 'green',
-                            style : 'basic'
+                        color : 'green',
+                        style : 'basic'
                         });
-                    </code>
-                </pre>
+                    </div>
+                </div>
 
                 <h3 class="ui header">Gradient Style</h3>
                 <div>
@@ -160,14 +173,15 @@
                         <div class="detail">0%</div>
                     </div>
                 </div>
-                <pre>
-                    <code class="javascript">
+                <div class="ui segment">
+                    <div class="ui top left attached label">Code</div>
+                    <div class="code">
                         $('#gradient').range({
-                            color : 'red',
-                            style : 'gradient'
+                        color : 'red',
+                        style : 'gradient'
                         });
-                    </code>
-                </pre>
+                    </div>
+                </div>
 
                 <h3 class="ui header">Basic Style (Group)</h3>
                 <div>
@@ -188,22 +202,16 @@
                         <div class="detail">0%</div>
                     </div>
                 </div>
-                <pre>
-                    <code class="javascript">
+                <div class="ui segment">
+                    <div class="ui top left attached label">Code</div>
+                    <div class="code">
                         $('.basic-group').range({
-                            color : '#65999c',
-                            style : 'basic'
+                        color : '#65999c',
+                        style : 'basic'
                         })
-                    </code>
-                </pre>
+                    </div>
+                </div>
 
-            </div>
-        </div>
-    </div>
-
-    <div id="browsersupport">
-        <div class="ui vertical stripe segment">
-            <div class="ui text container">
                 <h3 class="ui header">Browser Support</h3>
                 Chrome(46.0.x.x+), Safari(9.0.1+), Firefox(42.0+), Opera(33.0)
             </div>
@@ -222,15 +230,18 @@
 <script src="./assets/range.min.js"></script>
 <script type="text/javascript">
     $(function(){
-        hljs.initHighlightingOnLoad();
+        $('.code').each(function(i, block) {
+            hljs.configure({useBR: true});
+            hljs.highlightBlock(block);
+        });
     })
 
     /**
-    $('input[type="range"]').range({
+     $('input[type="range"]').range({
         color : 'red',
         style : 'basic'
     });
-    */
+     */
 
     $('#basic').range({
         color : 'green',

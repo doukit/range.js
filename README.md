@@ -18,6 +18,13 @@ Basic style as follows:
 ```
 
 ## Usage
+```javascript
+$('#gradient').range(options);
+```
+Example:
+```javascript
+$('#gradient').range({color : 'red', style : 'gradient'});
+```
 More detail usage visit [http://rangejs.doukit.org/](http://rangejs.doukit.org/).
 
 ## Dependency
