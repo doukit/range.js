@@ -1,5 +1,5 @@
 # range.js
-range.js beautiful slide bar for &lt;input type=range /&gt; . Now, chrome, safari, firefox browser are supported.
+A beautiful slide bar plugin for &lt;input type=range /&gt; . Now, chrome, safari, firefox, opera browser are supported.
 
 ## Basic
 Basic style as follows:
