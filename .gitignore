@@ -3,7 +3,9 @@
 /.project
 /.buildpath
 /.classpath
+/node_modules
 /.idea
 out/
 *.iml
 *~
+npm-debug.log
