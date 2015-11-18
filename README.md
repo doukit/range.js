@@ -3,7 +3,7 @@ range.js beautiful slide bar for &lt;input type=range /&gt; . Now, chrome, safar
 
 ## Basic
 Basic style as follows:
-![](image/basic.png "basic style")
+![](style/image/basic.png "basic style")
 
 ```html
  <div>
