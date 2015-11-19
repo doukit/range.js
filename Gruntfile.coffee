@@ -8,7 +8,7 @@ module.exports = (grunt) ->
 
   grunt.initConfig
     pkg: grunt.file.readJSON("package.json")
-    minified_comments: "/* range.js #{version_tag()} | (c) 2015-<%= grunt.template.today('yyyy') %> by doukit */\n"
+    minified_comments: "/* range.js #{version_tag()} | (c) 2015-<%= grunt.template.today('yyyy') %> by doukit http://rangejs.doukit.org/ */\n"
 
     uglify:
       options:
