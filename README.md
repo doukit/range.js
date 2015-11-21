@@ -1,5 +1,5 @@
 # range.js
-A beautiful slide bar plugin for &lt;input type=range /&gt; . Now, chrome, safari, firefox, opera browser are supported.
+A beautiful input slider (jQuery plugin) for HTML5 &lt;input type='range'&gt;. Now, chrome, safari, firefox, opera browser are supported.
 
 ## Usage
 Different input can be configured with different background colors and styles.
