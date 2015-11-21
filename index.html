@@ -5,97 +5,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel='shortcut icon' type='image/x-icon' href='assets/image/favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='style/image/favicon.ico' />
 
-    <link rel="stylesheet" type="text/css" href="style/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="http://oss.maxcdn.com/semantic-ui/2.1.6/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="http://oss.maxcdn.com/highlight.js/8.9.1/styles/googlecode.min.css">
+    <link rel="stylesheet" type="text/css" href="style/css/index.css">
 
-    <script src="deps/jquery.min.js"></script>
-    <script src="style/semantic/semantic.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./assets/range.min.css">
-
-    <link rel="stylesheet" href="style/highlight/github.css">
-    <script src="style/highlight/highlight.min.js"></script>
-
-    <style type="text/css">
-        .masthead.segment {
-            min-height: 700px;
-            padding: 1em 0em;
-        }
-        .masthead .logo.item img {
-            margin-right: 1em;
-        }
-        .masthead h1.ui.header {
-            margin-top: 3em;
-            margin-bottom: 0em;
-            font-size: 4em;
-            font-weight: normal;
-        }
-        .masthead h2 {
-            font-size: 1.7em;
-            font-weight: normal;
-        }
-
-        .ui.vertical.stripe {
-            padding: 8em 0em;
-        }
-        .ui.vertical.stripe h3 {
-            font-size: 2em;
-        }
-        .ui.vertical.stripe .button + h3,
-        .ui.vertical.stripe p + h3 {
-            margin-top: 3em;
-        }
-
-        .ui.vertical.stripe p {
-            font-size: 1.33em;
-        }
-
-        .secondary.pointing.menu .toc.item {
-            display: none;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .secondary.pointing.menu .item,
-            .secondary.pointing.menu .menu {
-                display: none;
-            }
-            .secondary.pointing.menu .toc.item {
-                display: block;
-            }
-            .masthead.segment {
-                min-height: 350px;
-            }
-            .masthead h1.ui.header {
-                font-size: 2em;
-                margin-top: 1.5em;
-            }
-            .masthead h2 {
-                margin-top: 0.5em;
-                font-size: 1.5em;
-            }
-        }
-
-        .code {
-            margin-top: 2px;
-        }
-    </style>
-
-    <script>
-        $(document).ready(function() {
-            // fix menu when passed
-            $('.masthead').visibility({
-                once: false,
-                onBottomPassed: function() {
-                    $('.fixed.menu').transition('fade in');
-                },
-                onBottomPassedReverse: function() {
-                    $('.fixed.menu').transition('fade out');
-                }
-            })
-            ;
-        })
-        ;
-    </script>
+    <link rel="stylesheet" type="text/css" href="src/range.css">
 </head>
 <body>
 
@@ -122,7 +38,7 @@
             <h1 class="ui inverted header">
                 range.js
             </h1>
-            <h2>A beautiful slide bar plugin for range input element.</h2>
+            <h2>A beautiful input slider plugin for HTML5 &lt;input type='range'&gt;.</h2>
             <h3>
                 <a href="https://github.com/doukit/range.js/archive/v0.1.0.zip" >
                     <i class="large download icon"></i> v0.1.0
@@ -139,12 +55,12 @@
         <div class="ui vertical stripe segment">
             <div class="ui text container">
                 <h3 class="ui header">range.js</h3>
-                <p>A beautiful slide bar plugin for range input element.</p>
+                <p>A beautiful input slider (jQuery plugin) for HTML5 &lt;input type='range'&gt;.</p>
 
                 <div class="ui segment">
-                    <div class="ui top left attached label">Code</div>
                     <div class="code">
                         &lt;link rel="stylesheet" type="text/css" href="http://rangejs.doukit.org/assets/range.min.css"&gt;
+                        &lt;script src="http://oss.maxcdn.com/jquery/2.1.4/jquery.min.js"&gt;&lt;/script&gt; <br>
                         &lt;script src="http://rangejs.doukit.org/assets/range.min.js"&gt;&lt;/script&gt;
                     </div>
                 </div>
@@ -160,7 +76,6 @@
                     </div>
                 </div>
                 <div class="ui segment">
-                    <div class="ui top left attached label">Code</div>
                     <div class="code">
                         $('#basic').range({
                         color : 'green',
@@ -180,7 +95,6 @@
                     </div>
                 </div>
                 <div class="ui segment">
-                    <div class="ui top left attached label">Code</div>
                     <div class="code">
                         $('#gradient').range({
                         color : 'red',
@@ -209,7 +123,6 @@
                     </div>
                 </div>
                 <div class="ui segment">
-                    <div class="ui top left attached label">Code</div>
                     <div class="code">
                         $('.basic-group').range({
                         color : '#65999c',
@@ -233,7 +146,10 @@
     </div>
 </div>
 
-<script src="./assets/range.min.js"></script>
+<script src="http://oss.maxcdn.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://oss.maxcdn.com/semantic-ui/2.1.6/semantic.min.js"></script>
+<script src="http://oss.maxcdn.com/highlight.js/8.9.1/highlight.min.js"></script>
+<script src="src/range.js"></script>
 <script type="text/javascript">
     $(function(){
         $('.code').each(function(i, block) {
@@ -264,7 +180,7 @@
         style : 'basic'
     })
 
-    $('.ui.sidebar').sidebar('toggle');
+
 </script>
 </body>
 </html>
