@@ -1,4 +1,3 @@
-
 $ = jQuery;
 
 var RangeStyle = (function(){
@@ -10,17 +9,12 @@ var RangeStyle = (function(){
     }
 
     /**
-     * 样式的处理
+     * stype processing
      * @param that
      * @param config
      */
     RangeStyle.eachInputRangeAction = function(that, options) {
-        var config;
-        if (options == undefined || options == null) {
-            config = defaultOptions;
-        } else {
-            config = options;
-        }
+        var config = options || defaultOptions;
 
         var percent = Math.ceil(((that.value - that.min) / (that.max - that.min)) * 100);
 

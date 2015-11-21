@@ -17,14 +17,14 @@ module.exports = (grunt) ->
         banner: "<%= minified_comments %>"
       minified_range_js:
         files:
-          'assets/range.min.js': ['assets/range.js']
+          'assets/range.min.js': ['src/range.js']
 
     cssmin:
       minified_range_css:
         options:
           banner: "<%= minified_comments %>"
           keepSpecialComments: 0
-        src: 'assets/range.css'
+        src: 'src/range.css'
         dest: 'assets/range.min.css'
 
   grunt.registerTask 'postBuild', 'some post task after build', () ->
