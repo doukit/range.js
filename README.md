@@ -13,7 +13,7 @@ $('#gradient').range({color : 'red', style : 'gradient'});
 More detail usage visit [http://rangejs.doukit.org/](http://rangejs.doukit.org/).
 
 ## Range input style
-1. Gradient style (default):
+* Gradient style (default):
 ![](style/image/gradient.png "gradient style")
 ```javascript
    $('#gradient').range({
@@ -21,7 +21,7 @@ More detail usage visit [http://rangejs.doukit.org/](http://rangejs.doukit.org/)
         style : 'gradient'
     });
 ```
-2. Basic style:
+* Basic style:
 ![](style/image/basic.png "basic style")
 ```javascript
   $('#basic').range({
