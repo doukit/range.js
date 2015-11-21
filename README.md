@@ -40,4 +40,4 @@ range.js is freely distributable under the terms of the [MIT license](./LICENSE)
 2015-11-13
 
 ## Update
-2015-11-18
+2015-11-21
