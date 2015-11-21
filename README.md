@@ -1,23 +1,8 @@
 # range.js
 A beautiful slide bar plugin for &lt;input type=range /&gt; . Now, chrome, safari, firefox, opera browser are supported.
 
-## Basic
-Basic style as follows:
-![](style/image/basic.png "basic style")
-
-```html
- <div>
-     <label>0%</label>
-     <input type="range" value="32" min="0" max="100"  id="rangedemo"/>
-     <label>100%</label>
-     <div class="ui label">
-     Current
-     <div class="detail">0%</div>
-     </div>
- </div>
-```
-
 ## Usage
+Different input can be configured with different background colors and styles.
 ```javascript
 $('#gradient').range(options);
 ```
@@ -26,6 +11,24 @@ Example:
 $('#gradient').range({color : 'red', style : 'gradient'});
 ```
 More detail usage visit [http://rangejs.doukit.org/](http://rangejs.doukit.org/).
+
+## Range input style
+1. Gradient style (default):
+![](style/image/gradient.png "gradient style")
+```javascript
+   $('#gradient').range({
+        color : 'red',
+        style : 'gradient'
+    });
+```
+2. Basic style:
+![](style/image/basic.png "basic style")
+```javascript
+  $('#basic').range({
+        color : 'green',
+        style : 'basic'
+    });
+```
 
 ## Dependency
 [jQuery](https://jquery.com/)
