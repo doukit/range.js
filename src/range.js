@@ -94,15 +94,11 @@ $.fn.extend({
         }
 
         this.each(function() {
-            var that = this;
-            var config = options;
-            RangeStyle.eachInputRangeAction(that, config);
+            RangeStyle.eachInputRangeAction(this, options);
         });
 
         this.on('input', function() {
-            var that = this;
-            var config = options;
-            RangeStyle.eachInputRangeAction(that, config);
+            RangeStyle.eachInputRangeAction(this, options);
         });
     }
 });
