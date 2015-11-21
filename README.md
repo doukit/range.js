@@ -1,5 +1,5 @@
 # range.js
-[![range.js](https://img.shields.io/badge/range-.js-00ff00.svg)](http://rangejs.doukit.org/)
+[![range.js](https://img.shields.io/badge/range-.js-00ff00.svg)](http://rangejs.doukit.org/)  
 A beautiful input slider (jQuery plugin) for HTML5 &lt;input type='range'&gt;. Now, chrome, safari, firefox, opera browser are supported.
 
 ## Usage
@@ -11,7 +11,7 @@ Example:
 ```javascript
 $('#gradient').range({color : 'red', style : 'gradient'});
 ```
-More detail usage visit [![range.js](https://img.shields.io/badge/range-.js-00ff00.svg)](http://rangejs.doukit.org/).
+More detail usage visit  [http://rangejs.doukit.org/](http://rangejs.doukit.org/).
 
 ## Range input style
 * Gradient style (default):
